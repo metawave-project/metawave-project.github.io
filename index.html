@@ -158,18 +158,25 @@
     </ul>
   </section>
 
-  <section id="contact" class="prose" aria-labelledby="h-contact">
-    <h2 id="h-contact">Contact</h2>
-    <p>Dr Nikolaos Matthaiakakis<br>
-      Institute of Nanoscience and Nanotechnology, NCSR “Demokritos”<br>
-      15341 Agia Paraskevi, Athens, Greece<br>
-      <a href="mailto:n.matthaiakakis@inn.demokritos.gr">n.matthaiakakis@inn.demokritos.gr</a></p>
-    <!-- Social media (part of deliverable D4.1): replace the URLs and remove the comment markers.
-    <p>Follow the project on
-      <a href="https://www.linkedin.com/company/REPLACE">LinkedIn</a> and
-      <a href="https://bsky.app/profile/REPLACE">Bluesky</a>.</p>
-    -->
-  </section>
+<section id="contact" class="prose" aria-labelledby="h-contact">
+  <h2 id="h-contact">Contact</h2>
+  <p>Dr Nikolaos Matthaiakakis<br>
+    Institute of Nanoscience and Nanotechnology, NCSR “Demokritos”<br>
+    15341 Agia Paraskevi, Athens, Greece<br>
+    <span id="contact-email"></span></p>
+  <script>
+    (function() {
+      const u = 'n.matthaiakakis';
+      const d = 'inn.demokritos.gr';
+      document.getElementById('contact-email').innerHTML = `<a href="mailto:${u}@${d}">${u}@${d}</a>`;
+    })();
+  </script>
+  <!-- Social media (part of deliverable D4.1): replace the URLs and remove the comment markers.
+  <p>Follow the project on
+    <a href="https://www.linkedin.com/company/REPLACE">LinkedIn</a> and
+    <a href="https://bsky.app/profile/REPLACE">Bluesky</a>.</p>
+  -->
+</section>
 
   <section class="funding" aria-labelledby="h-funding">
     <h2 id="h-funding">Funding</h2>
